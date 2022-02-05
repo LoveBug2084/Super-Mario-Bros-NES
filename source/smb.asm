@@ -2718,8 +2718,7 @@ PrimaryGameSetup:
       lda #$01
       sta FetchNewGameTimerFlag   ;set flag to load game timer from header
       sta PlayerSize              ;set player's size to small
-;      lda #$02
-	lda #$08
+      lda #$02
       sta NumberofLives           ;give each player three lives
       sta OffScr_NumberofLives
 
@@ -5651,8 +5650,10 @@ ChkHoleX:   cmp $07                     ;compare vertical high byte with value s
             bmi CloudExit               ;if flag was clear, branch to set modes and other values
             ldy EventMusicBuffer        ;check to see if music is still playing
             bne ExitCtrl                ;branch to leave if so
+
             lda #$06                    ;otherwise set to run lose life routine
             sta GameEngineSubroutine    ;on next frame
+
 ExitCtrl:   rts                         ;leave
 
 CloudExit:
