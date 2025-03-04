@@ -1,0 +1,4 @@
+#!/bin/bash
+asm6/asm6 smb.asm mysmb.nes
+cp mysmb.nes mysmb.fc
+
