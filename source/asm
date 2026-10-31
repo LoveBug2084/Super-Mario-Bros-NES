@@ -1,3 +1,2 @@
 #!/bin/bash
-asm6/asm6 smb.asm mysmb
-mv mysmb mysmb.nes
+asm6/asm6 smb.asm smb.nes smb.lst
