@@ -1,2 +1,2 @@
-asm6\asm6 smb.asm
-copy /y smb.bin smb.nes
+asm6\asm6 smb.asm smb.nes smb.lst
+
